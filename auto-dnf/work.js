@@ -33,11 +33,9 @@ function attack() {
 }
 
 function restart() {
-  if (isFindWay.get() == 0) {
-    press(2100, 160, 500);
-    sleep(1000);
-    press(1380, 680, 500);
-  }
+  press(2100, 160, 500);
+  sleep(1000);
+  press(1380, 680, 500);
 }
 
 function findWay() {
