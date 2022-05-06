@@ -33,9 +33,10 @@ function attack() {
 }
 
 function restart() {
-  press(2100, 160, 500);
+  console.log('restart');
+  press(2100, 160, 1000);
   sleep(1000);
-  press(1380, 680, 500);
+  press(1380, 680, 1000);
 }
 
 function findWay() {
