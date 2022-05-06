@@ -28,7 +28,6 @@ function skill4() {
 
 function attack() {
   if (isFindWay.get() == 0) {
-    swipe(460, 800, 440, 800, 500)
     press(2000, 830, 100);
   }
 }
@@ -47,8 +46,11 @@ function findWay() {
     isFindWay.getAndSet(1)
     setTimeout(function() {
       isFindWay.getAndSet(0)
-    }, 10 * 1000)
-    press(2000, 830, 10 * 1000);
+    }, 8 * 1000)
+    for (var i = 0; i < 5; i++) {
+      press(2000, 830, 2 * 1000);
+      swipe(460, 800, 440, 800, 20)
+    } 
   }
 }
 
